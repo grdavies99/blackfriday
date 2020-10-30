@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1>Title</h1>
+    <button id="clicker">press me</button>
+    <script>
+        // const events = require("events");
+        // const eventEmitter = new events.EventEmitter();
+        
+        document.getElementById("clicker").addEventListener("click",function(){
+            document.getElementById("clicker").innerHTML = "Button pressed";
+        });
+    </script>
+</body>
+</html>
