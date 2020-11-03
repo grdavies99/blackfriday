@@ -40,3 +40,23 @@ button{
     font-size: 20px;
     margin-top: 1em;
 }
+.explain{
+    background-image: url('images/home.jpg');
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+p{
+    width: 30%;
+    margin-top: 0;
+    margin-left: 35%;
+    margin-right: 35%;
+    text-align: center;
+    font-size: 2em;
+  position: absolute;
+  line-height: 700px;
+  vertical-align: middle;
+  color: white;
+}
