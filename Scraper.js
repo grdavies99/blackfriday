@@ -11,6 +11,9 @@ while (url[count] != 'q'){
         count++;
     }
 }
+setInterval(Scrape, 100*10);
+
+function Scrape(){
 url.forEach(element => {
     if(element != 'q'){
         axios.get(element).then(response=>{
@@ -32,6 +35,6 @@ url.forEach(element => {
         })
     }
 });
-
+}
 
 

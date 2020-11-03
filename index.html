@@ -3,19 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href = "style.css">
+    <title>Newegg Price Checker</title>
     
 </head>
 <body>
-    <h1>Title</h1>
-    <button id="clicker">press me</button>
+    
+    <div class="nav"><a><h1>Newegg Price Checker</h1></a></div>
+    <div class="form">
+        <button id="clicker" onclick="addElement()">Click to add items</button>
+    <form id="priceChecker" method="GET">
+        <input type="text" id="url0" name="input0" placeholder="Please enter a Newegg URL">
+        <button type="submit" id="submit">Show me the prices</button>
+    </form>
+    
+    </div>
     <script>
-        // const events = require("events");
-        // const eventEmitter = new events.EventEmitter();
-        
-        document.getElementById("clicker").addEventListener("click",function(){
-            document.getElementById("clicker").innerHTML = "Button pressed";
-        });
+        var i = 1;
+        function addElement(){
+            var field = document.createElement("input");
+            field.type = "text";
+            field.name = "input"+i;
+            field.placeholder="Please enter a Newegg URL";
+            document.getElementById("priceChecker").prepend(field);
+            i++;
+        }
     </script>
 </body>
 </html>
